@@ -18,7 +18,6 @@ Check out the live demo [here](Link to your live demo).
 - Flask
 - SQLAlchemy
 - HTML/CSS
-- JavaScript
 
 ## Installation
 
