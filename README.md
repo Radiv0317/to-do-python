@@ -10,7 +10,7 @@ This web application is a simple To-Do List where users can manage their tasks e
 
 ## Demo
 
-Check out the live demo [here]([Link to your live demo](https://mikemichael.pythonanywhere.com/)).
+Check out the live demo [here]([Link to live demo](https://mikemichael.pythonanywhere.com/)).
 
 ## Technologies Used
 
