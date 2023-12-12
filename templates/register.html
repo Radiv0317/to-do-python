@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Register</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link ke file CSS kustom jika diperlukan -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='register.css') }}">
+    <style>
+       
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>Register</h1>
         <form method="POST" action="/register">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="submit" value="Register">
+            <input type="text" name="username" class="form-control" placeholder="Username" required>
+            <input type="password" name="password" class="form-control" placeholder="Password" required>
+            <input type="submit" value="Register" class="btn btn-success">
         </form>
         <p>Already have an account? <a href="/login">Login here</a></p>
     </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

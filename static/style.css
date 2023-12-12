@@ -1,107 +1,71 @@
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-/* Body Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin-top: 200px;
+*{
+    font-family: 'Raleway', sans-serif;
 }
-
-/* Container Styles */
-.container {
-    width: 80%;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Heading Styles */
-h1, h2 {
+.jumbotron {
+    background-color: #ffffff;
+    color: #000000;
     text-align: center;
-    color: #333;
+    padding: 100px 0; 
+    max-height: max-content;
 }
 
-/* Form Styles */
-form {
+/* Styles for the heading and text */
+.jumbotron h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
     margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-input[type="text"], input[type="password"], input[type="submit"] {
-    padding: 8px;
-    width: 70%;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+.jumbotron p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
 }
 
-input[type="submit"] {
+/* Style for the lead paragraph */
+.jumbotron .lead {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* Optional: Style for the button */
+.jumbotron .btn {
+    display: inline-block;
     padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
     background-color: #007bff;
     color: #fff;
-    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
+.jumbotron .btn:hover {
     background-color: #0056b3;
 }
 
-/* List Styles */
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin-top: 30px;
-    padding: 8px 0;
-    margin-bottom: 20px; /* Menambahkan jarak antara setiap task */
-    border-bottom: 1px solid #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-li {
-    /* Code lainnya */
-    position: relative;
-}
-
-li form {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-}
-
-li form input[type="submit"] {
-    width: 100px;
-    white-space: nowrap; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
-}
-
-li form input[type="submit"]:hover {
-    background-color: #c82333;
-}
-
-/* Link Styles */
-a {
+.get-started-btn {
+    display: inline-block;
+    padding: 10px 20px;
     text-decoration: none;
-    color: #007bff;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
 }
 
-a:hover {
-    text-decoration: underline;
+.get-started-btn:hover {
+    background-color: #0056b3;
+}
+
+.section2{
+    min-height: 30rem;
+    background-color: #ececec;
+    color: rgb(0, 0, 0);
+}
+.section2 .card{
+    background-color: #ffffff00;
+    color: rgb(0, 0, 0);
 }

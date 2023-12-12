@@ -1,0 +1,91 @@
+/* CSS dengan kombinasi warna yang direkomendasikan */
+body {
+    background-color: #f4f4f4; /* Warna latar belakang yang bersih dan netral */
+    color: #333; /* Warna teks yang kontras dan mudah dibaca */
+    margin-top: 50px;
+    font-family: Arial, sans-serif; /* Jenis font yang umum digunakan */
+}
+
+.container {
+    background-color: #ffffff; /* Warna latar kontainer yang bersih */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000; /* Warna teks judul yang mencolok */
+}
+
+/* CSS dengan penyesuaian pada posisi tombol "Tambah" */
+form {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Menambahkan penyesuaian posisi vertikal */
+}
+
+input[type="text"] {
+    width: calc(60% - 10px); /* Penyesuaian lebar input dengan margin agar tidak terlalu dekat dengan tombol */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f8f9fa;
+    color: #333;
+    margin-right: 10px; /* Menambahkan margin di sebelah kanan input */
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2a86ff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px; /* Menambahkan margin di sebelah kiri tombol */
+}
+
+
+input[type="submit"]:hover {
+    background-color: #000000; /* Warna tombol yang sedikit lebih gelap saat dihover */
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #000000; /* Warna teks judul yang mencolok */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc; /* Warna border item yang netral */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li form {
+    margin: 0;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    color: #000000; /* Warna teks link yang mencolok */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #000000; /* Warna teks link yang sedikit lebih gelap saat dihover */
+}

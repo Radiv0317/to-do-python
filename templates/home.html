@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>To-Do List</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/style.css') }}">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link ke file CSS kustom jika diperlukan -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/home.css') }}">
 </head>
 <body>
     <div class="container">
         <h1>To-Do List</h1>
         <form method="POST" action="/add_task">
-            <input type="text" name="task" placeholder="Tambahkan tugas baru" required>
-            <input type="submit" value="Tambah">
+            <input type="text" name="task" class="form-control" placeholder="Tambahkan tugas baru" required>
+            <input type="submit" value="Tambah" class="btn btn-primary">
         </form>
         <h2>Daftar Tugas</h2>
-        <ul>
+        <ul class="list-group">
             {% for task in tasks %}
-                <li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
                     {{ task.content }}
                     <form method="POST" action="/delete_task/{{ task.id }}">
-                        <input type="submit" value="Hapus">
+                        <input type="submit" value="Hapus" class="btn btn-danger">
                     </form>
                 </li>
             {% endfor %}
         </ul>
-        <p><a href="/logout">Logout</a></p>
+        <p><a href="/logout" class="btn btn-secondary">Logout</a></p>
     </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
